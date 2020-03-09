@@ -9,7 +9,6 @@ $("ul").on("click", "span", function(e) {
     });
   e.stopPropagation();
 });
-
 $("input[type='text']").keypress(function(e) {
   if (e.which === 13) {
     var todoText = $(this).val();
@@ -19,7 +18,6 @@ $("input[type='text']").keypress(function(e) {
     );
   }
 });
-
 $(".fa-plus").click(function() {
   $("input[type='text']").fadeToggle();
 });
